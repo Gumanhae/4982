@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="talkMapper">
+	<select id="finTalker" resultType="purchase">
+		select username, seller from purchase where no = #{no}
+	</select>
+	<select id="findbuyer" resultType="member">
+		select tel from member where username = #{username}
+	</select>
+</mapper>
